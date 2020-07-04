@@ -137,30 +137,7 @@ function googleTranslateElementInit() {
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 
-
-			<script src="https://js.stripe.com/v3/">
-
-  var stripe = Stripe('pk_test_mwLS1HAMBCFm2a0tesqzQ8hU004EvFDuBH');
-
-stripe.redirectToCheckout({
-  lineItems: [
-    // Replace with the ID of your price
-    {price: '{PRICE_ID}', quantity: 1}
-  ],
-  mode: 'payment',
-  successUrl: 'https://example.com/success',
-  cancelUrl: 'https://example.com/cancel',
-}).then(function (result) {
-  // If `redirectToCheckout` fails due to a browser or network
-  // error, display the localized error message to your customer
-  // using `result.error.message`.
-});
-</script>						 
-			<form method="POST" action="/create_customer_portal_session">
-    <button type="submit">Manage billing</button>
-
-
-</form>				  
+		  
 </Body>
 <Footer> 
 	<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e6acd73a784a0e9"></script>							 
